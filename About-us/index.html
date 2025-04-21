@@ -1,0 +1,599 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="keywords" content="Ride The Flo" />
+    <meta name="description" content="Where The Music Meets The Makers." />
+    <meta property="og:site_name" content="" />
+    <meta property="og:url" content="" />
+    <meta property="og:type" content="Ride The Flo" />
+    <meta property="og:title" content="Ride The Flo" />
+    <meta name="og:image" content="" />
+    <!-- For IE -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <!-- For Resposive Device -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- For Window Tab Color -->
+    <!-- Chrome, Firefox OS and Opera -->
+    <meta name="theme-color" content="#e1112b" />
+    <!-- Windows Phone -->
+    <meta name="msapplication-navbutton-color" content="#e1112b" />
+    <!-- iOS Safari -->
+    <meta name="apple-mobile-web-app-status-bar-style" content="#e1112b" />
+    <title>RTF</title>
+    <!-- Favicon -->
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="30x30"
+      href="../assets/images/logo.png"
+    />
+  </head>
+  <!-- bootsrap cdn-->
+  <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+    integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7"
+    crossorigin="anonymous"
+  />
+
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq"
+    crossorigin="anonymous"
+  ></script>
+
+  <!--css-->
+  <link rel="stylesheet" href="../index.css" />
+
+  <!--phosphor icons-->
+
+  <link
+    rel="stylesheet"
+    type="text/css"
+    href="https://cdn.jsdelivr.net/npm/@phosphor-icons/web@2.1.1/src/regular/style.css"
+  />
+  <link
+    rel="stylesheet"
+    type="text/css"
+    href="https://cdn.jsdelivr.net/npm/@phosphor-icons/web@2.1.1/src/fill/style.css"
+  />
+
+  <body>
+    <header>
+      <nav>
+        <div
+          class="container d-flex align-items-center justify-content-between mt-4"
+        >
+          <!-- Left Sidebar / Logo -->
+          <div class="nav-sidebar flex-shrink-0">
+            <img
+              class="img-fluid header-logo"
+              src="../assets/images/logo.png"
+              alt="logo"
+            />
+          </div>
+
+          <!-- Main Content (Centered) -->
+          <div
+            class="content flex-grow-1 d-none d-sm-flex justify-content-center"
+          >
+            <ul class="nav">
+              <li class="nav-item">
+                <a class="nav-link" href="../index.html">Home</a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="">About Us</a>
+              </li>
+              <!-- <li class="nav-item dropdown">
+                <a class="nav-link" href="#"
+                  >Categories <i class="ph ph-caret-down"></i
+                ></a>
+                <div class="dropdown-menu">
+                  <ul>
+                    <li><a href="#">Tech</a></li>
+                    <li><a href="#">Music</a></li>
+                    <li><a href="#">Fashion</a></li>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Books</a></li>
+                  </ul>
+                </div>
+              </li> -->
+              <li class="nav-item">
+                <a class="nav-link" href="../Contact-us/index.html"
+                  >Contact Us</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <!-- Rightbar -->
+          <div class="rightbar d-flex flex-shrink-0 align-items-center gap-2">
+            <button class="search-btn" id="theme-toggle-btn">
+              <i class="ph-fill ph-sun"></i>
+            </button>
+            <button class="menu-btn">
+              <i class="ph ph-list"></i>
+            </button>
+          </div>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div class="container">
+          <div class="mobile-menu">
+            <div class="container d-flex flex-row justify-content-end">
+              <button class="mobile-menu-close">
+                <i class="ph ph-x"></i>
+              </button>
+            </div>
+
+            <ul class="mobile-nav">
+              <li class="mobile-nav-item">
+                <a class="mobile-nav-link" href="../index.html">Home</a>
+              </li>
+              <li class="mobile-nav-item">
+                <a class="mobile-nav-link" href="">About Us</a>
+              </li>
+              <!-- <li class="mobile-nav-item dropdown">
+                <a class="mobile-nav-link" href="#"
+                  >Categories <i class="ph ph-caret-down"></i
+                ></a>
+                <div class="mobile-dropdown-menu">
+                  <ul>
+                    <li><a href="#">Tech</a></li>
+                    <li><a href="#">Music</a></li>
+                    <li><a href="#">Fashion</a></li>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Books</a></li>
+                  </ul>
+                </div>
+              </li> -->
+              <li class="mobile-nav-item">
+                <a class="mobile-nav-link" href="../Contact-us/index.html"
+                  >Contact Us</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+      <div
+        class="container-fluid headlines mt-3 p-1 d-flex aligin-items-center"
+      >
+        <marquee behavior="" direction="left" id="news-marquee">
+          <!-- <a href=""
+            >From South London to Super Eagles: What The Innit Boys Teach Us
+            About Identity •</a
+          >
+          <a href=""
+            >Love in Every Word: Nollywood’s Distrust of Critical Thoughts and
+            Rising Anti-Intellectualism •</a
+          >
+          <a href="">Ola Aina: Mastering The Game, Owning the Spotlight •</a>
+          <a href=""
+            >The Uzama Brothers Are Wearing Their City on Their Sleeves •</a
+          > -->
+        </marquee>
+      </div>
+    </header>
+
+    <div class="container-fluid py-3 mt-5">
+      <h1 class="text-center fw-bold text-red">About Us</h1>
+    </div>
+
+    <div class="container mt-5">
+      <h3 class="text-center">Welcome to Ridetheflo (RTF) -</h3>
+
+      <div class="container d-flex flex-column justify-items-center col-lg-7">
+        <p class="text-center">
+          At (RTF), we believe that the magic behind every hit song is more than
+          just the artist—it’s the entire ecosystem that brings it to life. From
+          producers and sound engineers to publicists and marketers, the real
+          heartbeat of the music industry beats behind the scenes. We’re here to
+          celebrate these unsung heroes and showcase their invaluable
+          contributions to Africa's vibrant music scene.
+        </p>
+
+        <p class="text-center">
+          RTF isn’t just a brand; it’s a movement—one that documents,
+          highlights, and honors the hard work that fuels the glitz and glamour
+          of the entertainment industry.
+        </p>
+      </div>
+    </div>
+
+    <div class="container-fluid mt-5 d-flex aligin-items-center">
+      <marquee class="d-flex flex-row" behavior="" direction="left"
+        ><h1 class="text-red fw-bold motto-marquee">
+          WHERE THE MUSIC MEETS THE MAKERS•
+        </h1>
+      </marquee>
+    </div>
+
+    <div class="container-fluid mt-5 d-flex aligin-items-center">
+      <marquee class="d-flex flex-row" behavior="" direction="right"
+        ><h1 class="fw-bold motto-marquee">
+          WHERE THE MUSIC MEETS THE MAKERS•
+        </h1>
+      </marquee>
+    </div>
+
+    <div
+      class="container d-flex flex-column flex-md-row mt-5 aligin-items-center justify-items-center"
+    >
+      <div class="col-12 col-md-6 mt-5">
+        <img
+          class="img-fluid"
+          src="../assets/images/blog/pexels-ashutoshsonwani-1762578.jpg"
+          alt=""
+          height="20"
+        />
+      </div>
+      <div
+        class="col-12 col-md-6 d-flex flex-column aligin-items-center justify-items-center justify-content-center mt-5"
+      >
+        <p class="text-center text-md-left fs-md-1">
+          Founded with a mission to dive deep into the mechanics of the music
+          business, RTF is all about storytelling. We give voice to the
+          creatives and professionals working tirelessly in the background,
+          showing the world how collaboration turns passion into success.
+          Whether you're an aspiring artist, a seasoned professional, or simply
+          a fan, our goal is to connect, educate, and entertain through fresh,
+          authentic content that pulls back the curtain on the entertainment
+          industry. Join the Ride
+        </p>
+      </div>
+    </div>
+    <hr class="article-hr" />
+
+    <div
+      class="container d-flex flex-column flex-md-row mt-5 aligin-items-center justify-items-center"
+    >
+      <div
+        class="col-12 col-md-6 d-flex flex-column aligin-items-center justify-items-center justify-content-center mt-5"
+      >
+        <h4 class="fw-bold">Our Story: More Than Just Music</h4>
+        <p>
+          At RTF, we’re more than just an urban media and entertainment brand.
+          We’re the voice of the behind-the-scenes players who make the music
+          happen. While other platforms focus on the stars in front of the mic,
+          we turn our spotlight on the creatives, sound engineers, producers,
+          and marketers working tirelessly to ensure that the stars shine. We
+          celebrate the creators, the strategists, the builders, and all the
+          hardworking individuals who make the industry move.
+        </p>
+      </div>
+      <div
+        class="col-12 col-md-6 d-flex flex-column aligin-items-center justify-items-center justify-content-center mt-5"
+      >
+        <img
+          class="img-fluid"
+          src="../assets/images/blog/pexels-brettjordan-2746823-removebg-preview.png"
+          alt="vinyl"
+        />
+      </div>
+    </div>
+
+    <div
+      class="container d-flex flex-column flex-md-row mt-5 align-items-center justify-content-center"
+    >
+      <div
+        class="col-12 col-md-6 d-flex flex-column align-items-center justify-content-center mt-5 order-1 order-md-2"
+      >
+        <h4 class="fw-bold">Our Mission</h4>
+        <p>
+          Our mission is clear: to bolster the ever-growing music and
+          entertainment industry in Nigeria and beyond. Through exclusive
+          content and in-depth coverage, we’re pushing the boundaries of how the
+          African music scene is understood. By documenting both the successes
+          and the struggles of the industry's movers and shakers, RTF is here to
+          give flowers to everyone—because every success story has a team behind
+          it.
+        </p>
+      </div>
+
+      <div
+        class="col-12 col-md-6 d-flex flex-column align-items-center justify-content-center mt-5 order-2 order-md-1"
+      >
+        <img
+          class="img-fluid"
+          src="../assets/images/blog/pexels-cottonbro-6698381-removebg-preview.png"
+          alt="tape"
+        />
+      </div>
+    </div>
+
+    <div
+      class="container d-flex flex-column flex-md-row mt-5 aligin-items-center justify-items-center"
+    >
+      <div
+        class="col-12 col-md-6 d-flex flex-column aligin-items-center justify-items-center justify-content-center mt-5"
+      >
+        <h4 class="fw-bold">Our Approach</h4>
+        <p>
+          At RTF, we’re more than just an urban media and entertainment brand.
+          We’re the voice of the behind-the-scenes players who make the music
+          happen. While other platforms focus on the stars in front of the mic,
+          we turn our spotlight on the creatives, sound engineers, producers,
+          and marketers working tirelessly to ensure that the stars shine. We
+          celebrate the creators, the strategists, the builders, and all the
+          hardworking individuals who make the industry move.
+        </p>
+      </div>
+      <div
+        class="col-12 col-md-6 d-flex flex-column aligin-items-center justify-items-center justify-content-center mt-5"
+      >
+        <img
+          class="img-fluid"
+          src="../assets/images/blog/pexels-pixabay-159613-removebg-preview.png"
+          alt=""
+        />
+      </div>
+    </div>
+
+    <div class="container mt-5">
+      <h2 class="text-center text-red fw-bold">
+        SERVICES THAT AMPLIFY YOUR SOUND
+      </h2>
+
+      <div class="container d-flex flex-column">
+        <div class="d-flex flex-column flex-lg-row mt-5 align-items-start">
+          <div class="d-flex flex-row col-12 col-lg-2 align-items-center">
+            <p class="mb-0 fw-bold fs-5 me-2">1</p>
+
+            <h5 class="mb-0 d-lg-none fw-bold">Music Distribution</h5>
+          </div>
+
+          <div class="col-12 col-lg-5 d-none d-lg-block">
+            <h1 class="mb-0 fw-bold">Music Distribution</h1>
+          </div>
+
+          <div class="col-12 col-lg-5 mt-2 mt-lg-0">
+            <p class="mb-0">
+              We get your music into the ears of the right listeners, across the
+              world’s top streaming platforms, ensuring your sound is heard far
+              and wide.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="container d-flex flex-column">
+        <div class="d-flex flex-column flex-lg-row mt-5 align-items-start">
+          <div class="d-flex flex-row col-12 col-lg-2 align-items-center">
+            <p class="mb-0 fw-bold fs-5 me-2">2</p>
+
+            <h5 class="mb-0 d-lg-none fw-bold">Pitching & Playlisting</h5>
+          </div>
+
+          <div class="col-12 col-lg-5 d-none d-lg-block">
+            <h1 class="mb-0 fw-bold">Pitching & Playlisting</h1>
+          </div>
+
+          <div class="col-12 col-lg-5 mt-2 mt-lg-0">
+            <p class="mb-0">
+              Leverage our expert pitching services to get your music onto
+              curated playlists and in front of tastemakers, bloggers, and
+              influencers. Visibility is key, and we make sure you stand out.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="container d-flex flex-column">
+        <div class="d-flex flex-column flex-lg-row mt-5 align-items-start">
+          <div class="d-flex flex-row col-12 col-lg-2 align-items-center">
+            <p class="mb-0 fw-bold fs-5 me-2">3</p>
+
+            <h5 class="mb-0 d-lg-none fw-bold">
+              Artiste Development & Branding
+            </h5>
+          </div>
+
+          <div class="col-12 col-lg-5 d-none d-lg-block">
+            <h1 class="mb-0 fw-bold">Artiste Development & Branding</h1>
+          </div>
+
+          <div class="col-12 col-lg-5 mt-2 mt-lg-0">
+            <p class="mb-0">
+              Every artist has a unique story to tell. We help you develop your
+              brand identity and create a tailored strategy that captures your
+              vision, engages your fans, and builds long-term success.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="container d-flex flex-column">
+        <div class="d-flex flex-column flex-lg-row mt-5 align-items-start">
+          <div class="d-flex flex-row col-12 col-lg-2 align-items-center">
+            <p class="mb-0 fw-bold fs-5 me-2">4</p>
+
+            <h5 class="mb-0 d-lg-none fw-bold">Music Rollouts & Marketing</h5>
+          </div>
+
+          <div class="col-12 col-lg-5 d-none d-lg-block">
+            <h1 class="mb-0 fw-bold">Music Rollouts & Marketing</h1>
+          </div>
+
+          <div class="col-12 col-lg-5 mt-2 mt-lg-0">
+            <p class="mb-0">
+              We get your music into the ears of the right listeners, across the
+              world’s top streaming platforms, ensuring your sound is heard far
+              and wide.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="container d-flex flex-column">
+        <div class="d-flex flex-column flex-lg-row mt-5 align-items-start">
+          <div class="d-flex flex-row col-12 col-lg-2 align-items-center">
+            <p class="mb-0 fw-bold fs-5 me-2">5</p>
+
+            <h5 class="mb-0 d-lg-none fw-bold">Music Rollouts & Marketing</h5>
+          </div>
+
+          <div class="col-12 col-lg-5 d-none d-lg-block">
+            <h1 class="mb-0 fw-bold">Music Rollouts & Marketing</h1>
+          </div>
+
+          <div class="col-12 col-lg-5 mt-2 mt-lg-0">
+            <p class="mb-0">
+              We get your music into the ears of the right listeners, across the
+              world’s top streaming platforms, ensuring your sound is heard far
+              and wide.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="container d-flex flex-column">
+        <div class="d-flex flex-column flex-lg-row mt-5 align-items-start">
+          <div class="d-flex flex-row col-12 col-lg-2 align-items-center">
+            <p class="mb-0 fw-bold fs-5 me-2">6</p>
+
+            <h5 class="mb-0 d-lg-none fw-bold">
+              Editorials & Content Creation
+            </h5>
+          </div>
+
+          <div class="col-12 col-lg-5 d-none d-lg-block">
+            <h1 class="mb-0 fw-bold">Editorials & Content Creation</h1>
+          </div>
+
+          <div class="col-12 col-lg-5 mt-2 mt-lg-0">
+            <p class="mb-0">
+              We craft high-quality editorials, blogs, and creative content that
+              resonate with fans and industry professionals alike, giving your
+              brand a voice that speaks volumes.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="container d-flex flex-column">
+        <div class="d-flex flex-column flex-lg-row mt-5 align-items-start">
+          <div class="d-flex flex-row col-12 col-lg-2 align-items-center">
+            <p class="mb-0 fw-bold fs-5 me-2">7</p>
+
+            <h5 class="mb-0 d-lg-none fw-bold">Social Media Campaigns</h5>
+          </div>
+
+          <div class="col-12 col-lg-5 d-none d-lg-block">
+            <h1 fw-bold class="mb-0">
+              Social Media <br />
+              Campaigns
+            </h1>
+          </div>
+
+          <div class="col-12 col-lg-5 mt-2 mt-lg-0">
+            <p class="mb-0">
+              Let’s put your brand on the map. With our targeted social media
+              campaigns, we help you build a loyal following and grow your
+              presence across platforms.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="container d-flex flex-column">
+        <div class="d-flex flex-column flex-lg-row mt-5 align-items-start">
+          <div class="d-flex flex-row col-12 col-lg-2 align-items-center">
+            <p class="mb-0 fw-bold fs-5 me-2">8</p>
+
+            <h5 class="mb-0 d-lg-none fw-bold">
+              Brand Management for Artistes
+            </h5>
+          </div>
+
+          <div class="col-12 col-lg-5 d-none d-lg-block">
+            <h1 class="mb-0 fw-bold">Brand Management for Artistes</h1>
+          </div>
+
+          <div class="col-12 col-lg-5 mt-2 mt-lg-0">
+            <p class="mb-0">
+              From public relations to digital presence, we manage every aspect
+              of your brand to ensure consistency and impact. It’s time to take
+              control of your narrative
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="container d-flex flex-column">
+        <div class="d-flex flex-column flex-lg-row mt-5 align-items-start">
+          <div class="d-flex flex-row col-12 col-lg-2 align-items-center">
+            <p class="mb-0 fw-bold fs-5 me-2">9</p>
+
+            <h5 class="mb-0 d-lg-none fw-bold">
+              Advertising & Blog Distribution
+            </h5>
+          </div>
+
+          <div class="col-12 col-lg-5 d-none d-lg-block">
+            <h1 class="mb-0 fw-bold">Advertising & Blog Distribution</h1>
+          </div>
+
+          <div class="col-12 col-lg-5 mt-2 mt-lg-0">
+            <p class="mb-0">
+              Our advertising solutions and blog distribution services ensure
+              your music and brand reach the right audience through the right
+              channels. Ready to Ride the Flo?
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container-fluid mt-5">
+      <div class="d-flex justify-content-start mt-2">
+        <h1 class="text-red big-rtf fw-bold">RTF</h1>
+      </div>
+
+      <div class="d-flex justify-content-center mt-2">
+        <h1 class="outlined-text-red big-rtf fw-bold">RTF</h1>
+      </div>
+
+      <div class="d-flex justify-content-end mt-2">
+        <h1 class="big-rtf fw-bold">RTF</h1>
+      </div>
+    </div>
+
+    <footer class="footer mt-5">
+      <div class="container d-flex flex-column mt-5 align-items-center">
+        <img
+          src="../assets/images/logo.png"
+          alt="footer-logo"
+          width="50"
+          height="30"
+        />
+
+        <h6 class="text-secondary mt-3 text-center p-xs-5">
+          Documenting Afro Culture Through Music and Films
+        </h6>
+
+        <div class="socials d-flex flex-row gap-3 mt-2">
+          <a href=""><i class="ph ph-linkedin-logo"></i></a>
+          <a href=""><i class="ph ph-facebook-logo"></i></a>
+          <a href=""><i class="ph ph-youtube-logo"></i></a>
+          <a href=""><i class="ph ph-instagram-logo"></i></a>
+          <a href=""><i class="ph ph-x-logo"></i></a>
+        </div>
+      </div>
+    </footer>
+    <hr />
+    <p class="text-center cc">Copyright Ride The Flo © 2025</p>
+  </body>
+</html>
+
+<!--Javascript-->
+<script src="../index.js"></script>
+
+<!--AOS-->
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>

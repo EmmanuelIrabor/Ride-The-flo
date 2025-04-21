@@ -1,0 +1,296 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="keywords" content="Ride The Flo" />
+    <meta name="description" content="Where The Music Meets The Makers." />
+    <meta property="og:site_name" content="" />
+    <meta property="og:url" content="" />
+    <meta property="og:type" content="Ride The Flo" />
+    <meta property="og:title" content="Ride The Flo" />
+    <meta name="og:image" content="" />
+    <!-- For IE -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <!-- For Resposive Device -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- For Window Tab Color -->
+    <!-- Chrome, Firefox OS and Opera -->
+    <meta name="theme-color" content="#e1112b" />
+    <!-- Windows Phone -->
+    <meta name="msapplication-navbutton-color" content="#e1112b" />
+    <!-- iOS Safari -->
+    <meta name="apple-mobile-web-app-status-bar-style" content="#e1112b" />
+    <title>RTF</title>
+    <!-- Favicon -->
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="30x30"
+      href="../assets/images/logo.png"
+    />
+  </head>
+  <!-- bootsrap cdn-->
+  <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+    integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7"
+    crossorigin="anonymous"
+  />
+
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq"
+    crossorigin="anonymous"
+  ></script>
+
+  <!--css-->
+  <link rel="stylesheet" href="../index.css" />
+
+  <!--phosphor icons-->
+
+  <link
+    rel="stylesheet"
+    type="text/css"
+    href="https://cdn.jsdelivr.net/npm/@phosphor-icons/web@2.1.1/src/regular/style.css"
+  />
+  <link
+    rel="stylesheet"
+    type="text/css"
+    href="https://cdn.jsdelivr.net/npm/@phosphor-icons/web@2.1.1/src/fill/style.css"
+  />
+
+  <body>
+    <header>
+      <nav>
+        <div
+          class="container d-flex align-items-center justify-content-between mt-4"
+        >
+          <!-- Left Sidebar / Logo -->
+          <div class="nav-sidebar flex-shrink-0">
+            <img
+              class="img-fluid header-logo"
+              src="../assets/images/logo.png"
+              alt="logo"
+            />
+          </div>
+
+          <!-- Main Content (Centered) -->
+          <div
+            class="content flex-grow-1 d-none d-sm-flex justify-content-center"
+          >
+            <ul class="nav">
+              <li class="nav-item">
+                <a class="nav-link" href="../index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="../About-us/index.html">About Us</a>
+              </li>
+              <!-- <li class="nav-item dropdown">
+                <a class="nav-link" href="#"
+                  >Categories <i class="ph ph-caret-down"></i
+                ></a>
+                <div class="dropdown-menu">
+                  <ul>
+                    <li><a href="#">Tech</a></li>
+                    <li><a href="#">Music</a></li>
+                    <li><a href="#">Fashion</a></li>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Books</a></li>
+                  </ul>
+                </div>
+              </li> -->
+              <li class="nav-item">
+                <a class="nav-link" href="">Contact Us</a>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Rightbar -->
+          <div class="rightbar d-flex flex-shrink-0 align-items-center gap-2">
+            <button class="search-btn" id="theme-toggle-btn">
+              <i class="ph-fill ph-sun"></i>
+            </button>
+            <button class="menu-btn">
+              <i class="ph ph-list"></i>
+            </button>
+          </div>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div class="container">
+          <div class="mobile-menu">
+            <div class="container d-flex flex-row justify-content-end">
+              <button class="mobile-menu-close">
+                <i class="ph ph-x"></i>
+              </button>
+            </div>
+
+            <ul class="mobile-nav">
+              <li class="mobile-nav-item">
+                <a class="mobile-nav-link" href="../index.html">Home</a>
+              </li>
+              <li class="mobile-nav-item">
+                <a class="mobile-nav-link" href="../About-us/index.html"
+                  >About Us</a
+                >
+              </li>
+              <!-- <li class="mobile-nav-item dropdown">
+                <a class="mobile-nav-link" href="#"
+                  >Categories <i class="ph ph-caret-down"></i
+                ></a>
+                <div class="mobile-dropdown-menu">
+                  <ul>
+                    <li><a href="#">Tech</a></li>
+                    <li><a href="#">Music</a></li>
+                    <li><a href="#">Fashion</a></li>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Books</a></li>
+                  </ul>
+                </div>
+              </li> -->
+              <li class="mobile-nav-item">
+                <a class="mobile-nav-link" href="">Contact Us</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+      <div
+        class="container-fluid headlines mt-3 p-1 d-flex aligin-items-center"
+      >
+        <marquee behavior="" direction="left" id="news-marquee">
+          <!-- <a href=""
+            >From South London to Super Eagles: What The Innit Boys Teach Us
+            About Identity •</a
+          >
+          <a href=""
+            >Love in Every Word: Nollywood’s Distrust of Critical Thoughts and
+            Rising Anti-Intellectualism •</a
+          >
+          <a href="">Ola Aina: Mastering The Game, Owning the Spotlight •</a>
+          <a href=""
+            >The Uzama Brothers Are Wearing Their City on Their Sleeves •</a
+          > -->
+        </marquee>
+      </div>
+    </header>
+
+    <div class="container-fluid red-board mt-5">
+      <div
+        class="container d-flex flex-column flex-lg-row align-items-center text-center text-lg-start py-3"
+      >
+        <div
+          class="col-12 col-lg-8 d-flex flex-column align-items-center align-items-lg-start"
+        >
+          <h2 class="fw-bold">Contact Us</h2>
+          <p class="col-10 col-lg-7">
+            Get in Touch with us at Ride The Flo. We are available 24/7 to hear
+            out your thoughts and inquiries.
+          </p>
+        </div>
+        <div class="col-12 col-lg-4 d-flex justify-content-center mt-4 mt-lg-0">
+          <img
+            class="img-fluid"
+            src="../assets/images/blog/pexels-cottonbro-6698381-removebg-preview.png"
+            alt=""
+          />
+        </div>
+      </div>
+    </div>
+
+    <div class="container mt-5">
+      <div class="container d-flex flex-column flex-md-row align-items-center">
+        <div class="col-md-6">
+          <p class="text-secondary">get in touch</p>
+          <div class="col-11 mt-3">
+            <h1>We are always ready to help and answer your questions.</h1>
+          </div>
+          <div class="col-9 mt-4">
+            <p>
+              fill in the necessary info and click "send Message" to submit your
+              Inquiries
+            </p>
+          </div>
+
+          <div class="d-flex flex-row gap-5 mt-5">
+            <div class="d-flex flex-column">
+              <p class="fw-bold">Call Center</p>
+              <span>800 100 973 20 34</span>
+              <span>+(234)903 278 560</span>
+            </div>
+            <div class="d-flex flex-column">
+              <p class="fw-bold">Our Location</p>
+              <span>USA , California -9662</span>
+              <span>085 Free lane 2</span>
+            </div>
+          </div>
+          <div class="d-flex flex-row gap-5 mt-3 mt-5">
+            <div class="d-flex flex-column">
+              <p class="fw-bold">Email</p>
+              <span>Hello@Rtf.com &nbsp; &nbsp; &nbsp;</span>
+            </div>
+            <div class="d-flex flex-column">
+              <p class="fw-bold">Social Network</p>
+              <div class="d-flex flex-row gap-2 contact-socials">
+                <a href=""><i class="ph ph-linkedin-logo"></i></a>
+                <a href=""><i class="ph ph-facebook-logo"></i></a>
+                <a href=""><i class="ph ph-youtube-logo"></i></a>
+                <a href=""><i class="ph ph-instagram-logo"></i></a>
+                <a href=""><i class="ph ph-x-logo"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 contact-box p-5 mt-5 mt-lg-0">
+          <p class="fw-bold">Get In Touch</p>
+          <p class="fw-light">Fill in the necessary information Below</p>
+          <div class="d-flex flex-column mt-3">
+            <input type="text" placeholder="Full Name" />
+            <input type="text" placeholder="Email" />
+            <input type="text" placeholder="Subject" />
+            <textarea placeholder="Message" name="" id=""></textarea>
+
+            <button class="mt-4">
+              <i class="ph ph-right"></i>Send Message
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer class="footer mt-5">
+      <div class="container d-flex flex-column mt-5 align-items-center">
+        <img
+          src="../assets/images/logo.png"
+          alt="footer-logo"
+          width="50"
+          height="30"
+        />
+
+        <h6 class="text-secondary mt-3 text-center p-xs-5">
+          Documenting Afro Culture Through Music and Films
+        </h6>
+
+        <div class="socials d-flex flex-row gap-3 mt-2">
+          <a href=""><i class="ph ph-linkedin-logo"></i></a>
+          <a href=""><i class="ph ph-facebook-logo"></i></a>
+          <a href=""><i class="ph ph-youtube-logo"></i></a>
+          <a href=""><i class="ph ph-instagram-logo"></i></a>
+          <a href=""><i class="ph ph-x-logo"></i></a>
+        </div>
+      </div>
+    </footer>
+    <hr />
+    <p class="text-center cc">Copyright Ride The Flo © 2025</p>
+  </body>
+</html>
+
+<!--Javascript-->
+<script src="../index.js"></script>
+
+<!--AOS-->
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
